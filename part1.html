@@ -1,5 +1,9 @@
 
 <html>
+    <hl id = "title"> YAYAY </hl>
+   
+    <br>
+    
     <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     
@@ -126,8 +130,8 @@
     </script>
 
     <body>
-        <button onclick="signin()">Sign in</button>
-        <button onclick="signout()">Sign out</button>
+        <button onclick="signin()" id = "button">Sign in</button>
+        <button onclick="signout()" id = "button2">Sign out</button>
     
         <form>
             Tweet:<br>
@@ -139,6 +143,26 @@
     <div id="mydata"></div>
     <div id="myphoto"></div>
     </body>
+<style> 
+        body { 
+    background: url(cool.jpg);
+    }
+    #button:hover {
+        background-color: aqua;  
+    }
+    
+    #title {
+        
+        color:aquamarine;
+        font-family: sans-serif;
+        font-size: 50px;
+    }
+    
+    #button2:hover { 
+        background-color:chartreuse;
+    }
 
+
+</style>
     
 </html>
