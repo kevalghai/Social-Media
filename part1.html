@@ -82,9 +82,8 @@
             for (var u in data) {
                 var d = new Date(data[u].time);
                 var t = d.toString()
-                    mylist = mylist + "<li>" + data.[u].tweet + " (" + t + ")</li>";
+                mylist = mylist + "<li>" + data[u].tweet + " (" + t + ")</li>";
                 } 
-            }
             mylist = mylist + "</ul>";
             var mytdiv = document.getElementById("mytweets");
             mytdiv.innerHTML = mylist;
